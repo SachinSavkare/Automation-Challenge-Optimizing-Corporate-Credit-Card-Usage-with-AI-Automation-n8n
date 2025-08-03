@@ -200,7 +200,7 @@ This README explains the full architecture, setup, prompts, inputs/outputs, and 
 
 If you found this project helpful or inspiring:
 - 🌟 Star this GitHub repo
-- 🤝 Connect with me on [LinkedIn](https://www.linkedin.com/in/sachinsavkare)
+- 🤝 Connect with me on [LinkedIn](https://www.linkedin.com/in/sachin-savkare/)
 - 📣 Share your feedback or forks
 
 ---
