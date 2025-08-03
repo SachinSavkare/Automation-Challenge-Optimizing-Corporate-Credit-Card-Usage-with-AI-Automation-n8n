@@ -29,12 +29,12 @@ This README explains the full architecture, setup, prompts, inputs/outputs, and 
 - Maximize card-specific rewards
 - Automate the full process from PDF to business insights
 
-> 📄 [Read the Full Challenge Brief (PDF)](./June_2025_monthly_challenge.pdf)
+> 📄 [Read the Full Challenge Brief (PDF)](https://github.com/SachinSavkare/Automation-Challenge-Optimizing-Corporate-Credit-Card-Usage-with-AI-Automation-n8n/blob/main/June_2025_monthly_challenge.pdf)
 
 ---
 
 ## 🧱 Architecture
-![Workflow Diagram](./Workflow%202.png)
+![Workflow Diagram](https://github.com/SachinSavkare/Automation-Challenge-Optimizing-Corporate-Credit-Card-Usage-with-AI-Automation-n8n/blob/main/Workflow%202.png)
 
 | Flow | Name | Purpose |
 |------|------|---------|
@@ -97,7 +97,7 @@ This README explains the full architecture, setup, prompts, inputs/outputs, and 
 5. Structure result with parser
 6. Output to Google Sheet (summary + transactions)
 
-> 📄 [Sample Input PDF – Aaryahi Hora](./Aaryahi_Hora_StandardChartered_Jan2025.pdf)
+> 📄 [Sample Input PDF – Aaryahi Hora](https://github.com/SachinSavkare/Automation-Challenge-Optimizing-Corporate-Credit-Card-Usage-with-AI-Automation-n8n/blob/main/Aaryahi_Hora_StandardChartered_Jan2025.pdf)
 
 ---
 
@@ -159,11 +159,10 @@ This README explains the full architecture, setup, prompts, inputs/outputs, and 
 ## 🔗 Resources & Guides
 
 - 📄 [📘 Final Report (Sample Output)]()
-- 📘 [🛠️ Project Development Guide (Steps Explained)]()
-- 📘 [📊 Challenge Prompt (PDF)]()
-- 🧩 [Project Architecture Image]()
-- 🎞️ [🎥 PPT Presentation & Walkthrough]() *(upload & update link)*
-- 📑 [📄 GitHub Template Reference (From Challenge)]()
+- 📘 [🛠️ Project Development Guide (Steps Explained)](https://github.com/SachinSavkare/Automation-Challenge-Optimizing-Corporate-Credit-Card-Usage-with-AI-Automation-n8n/blob/main/Project%20Guide.pdf)
+- 📘 [📊 Challenge Prompt (PDF)](https://github.com/SachinSavkare/Automation-Challenge-Optimizing-Corporate-Credit-Card-Usage-with-AI-Automation-n8n/blob/main/Challenge%20Prompt.pdf)
+- 🧩 [Project Architecture Image](https://github.com/SachinSavkare/Automation-Challenge-Optimizing-Corporate-Credit-Card-Usage-with-AI-Automation-n8n/blob/main/Workflow%202.png)
+- 🎞️ [🎥 PPT Presentation & Walkthrough](https://github.com/SachinSavkare/Automation-Challenge-Optimizing-Corporate-Credit-Card-Usage-with-AI-Automation-n8n/blob/main/Presentation.pptx)
 
 ---
 
