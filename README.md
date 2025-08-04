@@ -162,6 +162,7 @@ This README explains the full architecture, setup, prompts, inputs/outputs, and 
 - 📘 [🛠️ Project Development Guide (Steps Explained)](https://github.com/SachinSavkare/Automation-Challenge-Optimizing-Corporate-Credit-Card-Usage-with-AI-Automation-n8n/blob/main/Project%20Guide.pdf)
 - 📘 [📊 Challenge Prompt (PDF)](https://github.com/SachinSavkare/Automation-Challenge-Optimizing-Corporate-Credit-Card-Usage-with-AI-Automation-n8n/blob/main/Challenge%20Prompt.pdf)
 - 🧩 [Project Architecture Image](https://github.com/SachinSavkare/Automation-Challenge-Optimizing-Corporate-Credit-Card-Usage-with-AI-Automation-n8n/blob/main/Workflow%202.png)
+- 📘 [🛠️ Word Document JAVA Script](https://github.com/SachinSavkare/Automation-Challenge-Optimizing-Corporate-Credit-Card-Usage-with-AI-Automation-n8n/blob/main/Word%20Document%20Report%20JAVA%20Script.txt)
 - 🎞️ [🎥 PPT Presentation & Walkthrough](https://github.com/SachinSavkare/Automation-Challenge-Optimizing-Corporate-Credit-Card-Usage-with-AI-Automation-n8n/blob/main/Presentation.pptx)
 
 ---
