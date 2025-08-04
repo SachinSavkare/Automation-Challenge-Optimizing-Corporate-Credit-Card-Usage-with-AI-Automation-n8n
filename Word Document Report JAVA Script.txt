@@ -1,0 +1,85 @@
+const aiOutput = items[0].json;
+let index = 1;
+const requests = [];
+
+// Add Header
+const headerText = `BizPro Solutions\nCREDIT CARD OPTIMIZATION REPORT\nGenerated on: ${new Date().toLocaleDateString('en-GB', { day: '2-digit', month: 'long', year: 'numeric' })}\n\n`;
+requests.push(
+  {
+    insertText: { location: { index }, text: headerText },
+  },
+  {
+    updateParagraphStyle: {
+      range: { startIndex: index, endIndex: index + headerText.length },
+      paragraphStyle: { alignment: 'CENTER' },
+      fields: 'alignment',
+    },
+  },
+  {
+    updateTextStyle: {
+      range: { startIndex: index, endIndex: index + headerText.length },
+      textStyle: { bold: true, fontSize: { magnitude: 14, unit: 'PT' } },
+      fields: 'bold,fontSize',
+    },
+  }
+);
+index += headerText.length;
+
+// Section definitions
+const sections = [
+  { title: "1. EXECUTIVE SUMMARY", content: $('Set Filed').first().json.executive_summary },
+  { title: "2. OPTIMIZATION RECOMMENDATIONS", isTitleOnly: true },
+  { title: "2.1 TRAVEL", content: $('Set Filed').first().json.Travel },
+  { title: "2.2 DINING", content: $('Set Filed').first().json.dining },
+  { title: "2.3 OFFICE SUPPLIES", content: $('Set Filed').first().json.office_supplies },
+  { title: "3. CARD STRATEGY SUGGESTIONS", content: $('Set Filed').first().json.card_strategy_suggestions },
+  { title: "4. EMPLOYEE SPEND PATTERNS", content: $('Set Filed').first().json.employee_spend_patterns },
+  { title: "5. BEHAVIORAL SUGGESTIONS", content: $('Set Filed').first().json.behavioral_suggestions },
+  { title: "6. FINAL CFO SUMMARY", content: $('Set Filed').first().json.final_cfo_summary }
+];
+
+// Loop through sections
+for (const section of sections) {
+  const titleText = `\n${section.title}\n\n`;
+  requests.push(
+    { insertText: { location: { index }, text: titleText } },
+    {
+      updateTextStyle: {
+        range: { startIndex: index, endIndex: index + titleText.trim().length },
+        textStyle: { bold: true },
+        fields: 'bold',
+      }
+    }
+  );
+  index += titleText.length;
+
+  if (section.content) {
+    if (Array.isArray(section.content)) {
+      for (const item of section.content) {
+        const bulletText = `• ${item}\n`;
+        requests.push({ insertText: { location: { index }, text: bulletText } });
+        index += bulletText.length;
+      }
+    } else {
+      const paraText = section.content.trim() + '\n\n';
+      requests.push({ insertText: { location: { index }, text: paraText } });
+      index += paraText.length;
+    }
+  }
+}
+
+// ✅ Insert unique bold marker "### END_OF_REPORT ###"
+const endNoteText = '### END_OF_REPORT ###';
+requests.push(
+  { insertText: { location: { index }, text: `\n${endNoteText}\n` } },
+  {
+    updateTextStyle: {
+      range: { startIndex: index + 1, endIndex: index + 1 + endNoteText.length },
+      textStyle: { bold: true },
+      fields: 'bold',
+    }
+  }
+);
+index += endNoteText.length + 2;
+
+return [{ json: { requests } }];
